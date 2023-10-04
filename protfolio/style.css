@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+:root {
+
+    --orange: #D1884F;
+    --green: #00BAAA;
+    --blue: #3BBADB;
+
+
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    position: absolute;
+    left: 70%;
+    display: flex;
+}
+
+nav ul li {
+    margin: 15px;
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul li .icon {
+    margin: 5px;
+}
+
+nav ul li:hover {
+    color: var(--orange);
+}
+
+header {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 25px;
+}
+
+header p {
+    color: var(--blue);
+}
+
+.personal-data {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+
+}
+
+.personal-data h1 {
+    color: var(--blue);
+    width: 70%;
+    font-size: 40px;
+}
+
+.personal-data span {
+    color: var(--orange);
+}
+
+.small-intro {
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    width: 40%;
+
+}
+
+.small-intro span {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.contact {
+    position: absolute;
+    top: 65%;
+    left: 105px;
+}
+
+.contact button {
+    margin-left: 50px;
+    padding: 8px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.with-bg {
+    background-color: var(--blue);
+    outline: none;
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.without-bg {
+    background-color: #FFF;
+    outline: none;
+    border: 2px var(--blue) solid;
+    color: var(--blue);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 180px !important;
+}
+
+.myphoto {
+    position: absolute;
+    left: 70%;
+    top: 150px;
+}
+
+.myphoto img {
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        left: 25%;
+    }
+
+    .contact {
+        top: 75%;
+    }
+
+    .personal-data {
+        top: 83%;
+        left: 25%;
+
+    }
+
+    .personal-data h1 {
+        width: 450px;
+    }
+
+    .small-intro {
+
+        top: 97%;
+        left: 25%;
+
+    }
+
+    .small-intro p {
+        width: 400px;
+    }
+
+
+    .myphoto {
+        top: 100px;
+        left: 25%;
+    }
+
+    header {
+        top: 75%;
+        left: 36%;
+    }
+
+    .contact {
+        top: 112%;
+        left: 17%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+        left: 20%;
+    }
+
+    .contact {
+        top: 85%;
+        left: 10%;
+    }
+
+    .personal-data {
+        top: 73%;
+        left: 20%;
+        width: 300px;
+    }
+
+    .personal-data h1 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .small-intro {
+        top: 82%;
+        left: 20%;
+        width: 400px;
+    }
+
+    .small-intro p {
+        width: 100%;
+    }
+
+    .myphoto {
+        top: 70px;
+        left: 20%;
+    }
+
+    header {
+        top: 69%;
+        left: 20%;
+        font-size: 20px;
+    }
+
+    .contact {
+        top: 100%;
+        left: 10%;
+    }
+
+    .contact button {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    nav ul {
+        left: 5%;
+    }
+
+    .contact {
+        top: 90%;
+        left: 5%;
+    }
+
+    .personal-data {
+        top: 78%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .personal-data h1 {
+        font-size: 18px;
+    }
+
+    .small-intro {
+        top: 83%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .small-intro p {
+        font-size: 14px;
+    }
+
+    .myphoto {
+        top: 70px;
+        left: 5%;
+    }
+
+    header {
+        top: 73%;
+        left: 5%;
+        font-size: 20px;
+    }
+
+    .contact {
+        top: 100%;
+        left: 20px;
+        display: flex;
+    }
+
+    .contact button {
+        width: 150px;
+        margin: 5px;
+    }
+}
